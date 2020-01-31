@@ -63,3 +63,25 @@ ggtitle("Income for asian vs non-asian")+
 #   '-..-| \-.,___,  /
 #        \ `-.__/  /
 #         `-.__.-'
+
+
+ggplot(CaliforniaData) + geom_point(mapping = aes(x = numberAsian, y = numberUrban, color = "blue")) +
+  xlab("number of asian per million ") + 
+  ylab("number of asian in uban area") +
+  ggtitle("Do asian like to live in urban area in California?")  
+
+ggplot(CaliforniaData, aes(x = numberRural, y = numberRural))+
+  geom_bar(stat="summary", fun.y="mean", color = "black", fill= "white") + theme_dark() +
+  ggtitle("California Asian Urban vs Rural")+
+  xlab("Number in Rural")+
+  ylab("Number in Urban")
+
+
+pop <- mydata$population / 1000000
+house <- mydata$total_housing_units /1000000
+state <- mydata$state
+ggplot(mydata) + geom_point(mapping = aes(x = pop, y = house, color = state)) +
+  xlab("Population per million ") + 
+  ylab("number of housing unit per million") +
+  ggtitle("State housing unit vs population")  
+
