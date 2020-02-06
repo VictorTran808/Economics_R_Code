@@ -1,0 +1,32 @@
+---
+title: "ECON 340 Homework 1"
+author: "Victor A. Tran"
+date: "2/5/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Chapter 3 Quantative Problem Set #3,6,8,9,10
+
+#Problem #3 
+*** 
+Consider a bond with a 7% annual coupon and a face value of $1000. Complete the following table:
+
+Years to Maturity | Years to Maturity | Current Price
+
+
+
+##Problem #6
+
+
+##Problem #8
+
+
+##Problem #9
+
+
+##Problem #10
+
