@@ -21,7 +21,7 @@ view(CaliforniaData)
 #Creating variable objects from new California datatable
 numberAsian <- CaliforniaData$H7X005/100
 population <- CaliforniaData$H7V001/100
-numberUrban <- CaliforniaData$H7W002/ 100 
+numberUrban <- CaliforniaData$H7W002/100 
 numberRural <- CaliforniaData$H7W005/100
 
 ggplot(CaliforniaData) + geom_point(aes(x = numberAsian, y= numberUrban, color = population)) +
