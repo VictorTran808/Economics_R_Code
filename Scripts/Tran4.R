@@ -26,18 +26,20 @@ view(CaliforniaData)
 #' H7v001 is the population in the california county
 #' H7w002 is the number living in urban area
 #' H7w005 is the number living in rural area
-numberAsian <- CaliforniaData$H7X005/100
+numberAsian <- CaliforniaData$H7X005
 population <- CaliforniaData$H7V001/100
 numberUrban <- CaliforniaData$H7W002/100 
 numberRural <- CaliforniaData$H7W005/100
 
+Asian_Percentage <- numberAsian/population
+Asian_Percentage
 #Note: remember that these variable were divied by 100 !!!
 mean(population) # 6423.096
 mean(numberAsian) #838.1047 
 summary(CaliforniaData)
 
 Cali_graph <- ggplot(CaliforniaData) + 
-  geom_point(aes(x = numberRural, y= numberUrban, size = population, color = numberAsian)) +
+  geom_point(aes(x = numberRural, y= numberUrban, size = Asian_Percentage, color = numberAsian)) +
  # geom_smooth(method = "auto") +
   xlab("asian in rural area per hundred") + 
   ylab("asian in urban area per hundred") +
@@ -54,7 +56,7 @@ Cali_graph + scale_color_gradient2(midpoint =  8782, low = "blue", high = "red",
 ?scale_alpha
 ?aes
 
-Cali_graph + scale_color_gradientn(colours = rainbow(5)) 
+Cali_graph + scale_color_gradientn(colours = rainbow(5)) + scale_size(range = c(1:5)) 
 
 
 

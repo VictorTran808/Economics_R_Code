@@ -1,0 +1,87 @@
+code,country,gold,silver,bronze
+ USA,United States of America,46,37,38
+ CHN,China,26,18,26
+ GBR,Great Britain,27,23,17
+ RUS,Russia,19,18,19
+ GER,Germany,17,10,15
+ FRA,France,10,18,14
+ JPN,Japan,12,8,21
+ AUS,Australia,8,11,10
+ ITA,Italy,8,12,8
+ CAN,Canada,4,3,15
+ KOR,South Korea,9,3,9
+ NED,Netherlands,8,7,4
+ BRA,Brazil,7,6,6
+ NZL,New Zealand,4,9,5
+ AZE,Azerbaijan,1,7,10
+ ESP,Spain,7,4,6
+ KAZ,Kazakstan,3,5,9
+ HUN,Hungary,8,3,4
+ DEN,Denmark,2,6,7
+ KEN,Kenya,6,6,1
+ UZB,Uzbekistan,4,2,7
+ JAM,Jamaica,6,3,2
+ CUB,Cuba,5,2,4
+ SWE,Sweden,2,6,3
+ UKR,Ukraine,2,5,4
+ POL,Poland,2,3,6
+ CRO,Croatia,5,3,2
+ RSA,Russia,2,6,2
+ CZE,Czech Republic,1,2,7
+ BLR,Belarus,1,4,4
+ COL,Colombia,3,2,3
+ IRI,Iran,3,1,4
+ SRB,Serbia,2,4,2
+ TUR,Turkey,1,3,4
+ ETH,Ethiopia,1,2,5
+ SUI,Switzerland,3,2,2
+ PRK,North Korea,2,3,2
+ GEO,Georgia,2,1,4
+ GRE,Greece,3,1,2
+ BEL,Belgium,2,2,2
+ THA,Thailand,2,2,2
+ ROU,Romania,1,1,3
+ MAS,Malaysia,0,4,1
+ MEX,Mexico,0,3,2
+ ARG,Argentina,3,1,0
+ SVK,Slovakia,2,2,0
+ ARM,Armenia,1,3,0
+ SLO,Slovenia,1,2,1
+ LTU,Lithuania,0,1,3
+ NOR,Norway,0,0,4
+ INA,Indonesia,1,2,0
+ TPE,Taipei,1,0,2
+ VEN,Venezuela,0,1,2
+ BUL,Bulgaria,0,1,2
+ EGY,Egypt,0,0,3
+ TUN,Tunisia,0,0,3
+ BRN,Bahrain,1,1,0
+ VIE,Vietnam,1,1,0
+ IOC,Independent Olympic Athletes,1,0,1
+ BAH,Bahamas,1,0,1
+ CIV,Ivory Coast,1,0,1
+ IRL,Ireland,0,2,0
+ ALG,Algeria,0,2,0
+ IND,India,0,1,1
+ MGL,Mongolia,0,1,1
+ ISR,Israel,0,0,2
+ PUR,Puerto Rico,1,0,0
+ TJK,Tajikistan,1,0,0
+ SIN,Singapore,1,0,0
+ FIJ,Fiji,1,0,0
+ KOS,Kosovo,1,0,0
+ JOR,Jordan,1,0,0
+ BDI,Burundi,0,1,0
+ NIG,Niger,0,1,0
+ PHI,Philippines,0,1,0
+ QAT,Quatar,0,1,0
+ GRN,Grenada,0,1,0
+ TRI,Trinidad,0,0,1
+ NGR,Nigeria,0,0,1
+ POR,Portugal,0,0,1
+ DOM,Dominican Republic,0,0,1
+ AUT,Austria,0,0,1
+ EST,Estonia,0,0,1
+ FIN,Finland,0,0,1
+ UAE,United Arab Emirates,0,0,1
+ MAR,Morocco,0,0,1
