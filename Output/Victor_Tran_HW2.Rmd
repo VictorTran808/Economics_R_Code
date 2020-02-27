@@ -1,0 +1,164 @@
+---
+title: "ECON 340 Homework 2"
+author: "Victor Tran"
+date: "2/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Quantative Problem Set Chapter 13 Stock Market
+
+### Problem 4
+***
+Sine Corp. Stock sells for \$75.00 and currently pays an annual dividend of 2.50 per share.. 
+Calculate analysts' projected price one year from today if the expected one-year return is currently 3%.  
+Using equation
+$$\ R =  \frac{(p_1-p_0) + d}{p_0}$$    
+R = rate of return = 3% = 0.03  
+P~0~ = Current price this year = $75  
+P~1~ = Next one-year price = ?  
+d = dividend = $2.50  
+
+Solve for p~1~  
+
+
+$$\begin{align}
+0.03 =  \frac{(p_1-75) + 2.5}{75}\\
+(0.03 * 75) = (p_1 - 75) + 2.5\\
+2.25 - 2.5 = (p_1 - 75)\\
+-0.25 + 75 = p_1\\
+p_1 = 74.75
+\end{align}$$  
+
+**The project price in one year is $74.75**  
+
+
+
+### Problem 5
+***
+Suppose Microsoft, Inc., is trading at 27.29 per share. It pays an annual dividend of 0.32 per share,
+and analysts have set a one-year target price around 33.30 per share. What is the expected return of this stock.  
+
+Using equation
+$$\ R =  \frac{(p_1-p_0) + d}{p_0}$$
+R = rate of return = ?    
+P~0~ = Current price this year = $27.29    
+P~1~ = Next one-year price = $33.30  
+d = dividend = $0.32  
+
+Solve for R  
+
+$$\begin{align}
+R = \frac{(33.3-27.29) + 0.32}{27.29}\\
+R = \frac{6.33}{27.29}\\
+R = 0.232
+\end{align}$$  
+
+**The expect rate of return of this stock is 23.2% in one year**  
+
+### Problem 6
+***
+LaserAce is selling at 22.00 per share. The most recent annual dividend of 0.80. USing the Gordan growth model, the market requires a return of 11%, what  is the expected dividend growth rate for LaserAce?  
+
+Using equation:  
+
+$$\ p_0 =  \frac{d_0 * (1+g)}{k_e - g}$$  
+
+P~0~ = Current price this year = $22      
+k~e~ = require return = 0.11  
+g = dividend growth rate = ?  
+d~0~ = dividend in current year = $0.80  
+
+Solve for g  
+
+$$\begin{align}
+22 =  \frac{0.8 * (1+g)}{0.11 - g}\\
+22  * (0.11-g) = 0.8 * (1+g)\\
+2.42 - 22g = 0.8 + 0.8g\\
+2.42 - 22g - 0.8 = 0.8g\\
+\frac{1.62 - 22g}{0.8} =  \frac{0.8g}{0.8}\\
+2.025-27.5g = g\\
+2.025 = 28.5g\\
+g= \frac{2.025}{28.5}\\
+g = 0.071
+\end{align}$$  
+
+**The expected dividend growth is 7.1%**
+
+  
+
+### Problem 9
+***
+Gordan & Co.'s stock has paid its annual dividend of $1.10 per share. Analysts believe that Gordan will maintain its historic dividend growth rate of 3%. If the require return is 8%, what is the expected price of the stock next year?  
+
+Using equation  
+
+$$\ p_0 =  \frac{d_1}{k_e - g}$$  
+
+p~0~ = current price = ?  
+d~1~ = dividend = 1.10  
+k~e~ = required rate of return = 0.08    
+g = dividend growth rate = 0.03  
+
+Solve for p~0~  
+$$\ p_0 =  \frac{1.10}{0.08 - 0.03}$$ 
+$$\ p_0 =  \frac{1.10}{0.05} = 22$$
+
+**The current price is $22 per share for this stock**  
+
+Now to find next year price p~1~  
+
+$$\ p_1 = p_0(1+g) => 22(1+ 0.03) = 22.66$$  
+**The price of the stock in one year $22.66 per share**  
+
+
+### Problem 11
+***
+Nat-T-Cat Industries just went public. As a growing firm, it is not expected to pay a dividend for the first five years. After that investor expect to be pay a annual dividend of $1.00 per share with no growth. IF the require return is 10%, what is the current stock price?  
+
+Since there is no growth, g = 0  
+$$\ p_5 =  \frac{d(1+g)}{(k_e -g)} = \frac{1(1+0.0)}{(0.1 -0.00)} = \frac{1}{0.1} = 10$$
+**The stock price is $10 per share in year 5**  
+Now to find the stock price in year 6  
+$$\ p_6 =  \frac{p_5}{(1+k_e)^5} =  \frac{10}{(1+0.10)^5} = \frac{10}{1.10^5} = 6.21$$  
+
+**The stock price in year 6 is $6.21 per share**  
+
+
+### Problem 16
+***
+Calculate the dividend paid by a share of stock that you buy today for 55 and you expect to sell one year from today at 56 and you exted to sell one year from today if you want to earn a one year return equal to 3.5%.  
+
+$$\begin{align}
+R =  \frac{(p_1 - p_0) + d}{p_0}\\
+0.035 = \frac{(56-55) + d}{55}\\
+(0,035*55) = 1+d\\
+1.925-1 = d\\
+d=0.925
+\end{align}$$
+
+**The divident paid by the stock is $0.925 per share**  
+
+### Problem 17
+***
+The projected earnings per share for Risky Ventures, Inc., is $3.50. The Average PE ratio for the industry composed of Risky Ventures' closest competitors is 21. After careful analysis, you decide that Risky Ventures is a little more risky than average, so you decide a PE ratio if 23 better reflects the market's perception of the firm. Estimate the current price of the firm's stock.  
+
+Using equation  
+
+$$\ p =  (\frac{P}{E})*E$$
+p = current price of stock  
+E = Earning per share  
+(P/E) = PE ratio
+
+$$\ p = 23*3.5 = 80.5$$
+**The price per stock is $80.50**
+
+# Stock Report
+***
+
+
+
