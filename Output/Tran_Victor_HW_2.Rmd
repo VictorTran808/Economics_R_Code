@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-# Quantative Problem Set Chapter 13 Stock Market
+# Quantative Problem Set
 
 ### Problem 4
 ***
@@ -159,6 +159,24 @@ $$\ p = 23*3.5 = 80.5$$
 
 # Stock Report
 ***
+Find the closing price of one index and one stock, report the date and closing price.  
+
+>index stock   
+
+NASDAQ Composite Index  
+Date: Feburary 26, 2020  
+Closing price: 8980.77 US Dollar  
+![NASDAQ Stats](C:/Users/victor/Desktop/Economics_R_Code/Images/NASDAQ_IXIC_HW2.png)  
+
+![NASDAQ Graph](C:/Users/victor/Desktop/Economics_R_Code/Images/NASDAQ_IXIC_Graph.png)
 
 
+>stock
 
+Tesla Stock (TSLA)  
+Date: Feburary 26, 2020  
+Closing price: $778.80 US Dollar  
+![Tesla Stats](C:/Users/victor/Desktop/Economics_R_Code/Images/Telsa_Stock.png)
+
+
+![Tesla Graph](C:/Users/victor/Desktop/Economics_R_Code/Images/TESLA_Stock_Graph.png)
