@@ -1,10 +1,26 @@
-setwd("C:/Users/calamity/Documents/R_Research/Economics_R_Code")
+setwd("C:/Users/victor/Desktop/Economics_R_Code")
 
 library(pdftools)
 library(tidyverse)
-
-EV_Charge_Station <- read.csv("C:/Users/calamity/Documents/R_Research/Economics_R_Code/Dataset/Hawaii_EV_Charging_Stations_Map.CSV")
+library(sf)
+EV_Charge_Station <- read.csv("C:/Users/victor/Desktop/Economics_R_Code/Dataset/Hawaii_EV_Charging_Stations_Map.CSV")
 view(EV_Charge_Station)
+
+solar_permits <- read_csv("C:/Users/victor/Desktop/Economics_R_Code/Dataset/solar_permits.csv")
+View(solar_permits)
+
+Oahu <- read_sf(dsn = "Dataset", layer = "oahu")
+
+lon <- solar_permits$lng
+lat <- solar_permits$lat
+
+ggplot(data=Oahu) + geom_sf(fill = "green4", color = "black")  +
+  geom_point(data= solar_permits, aes(x = lon,
+                                      y = lat), color = "red1")
+
+ggplot(data=Oahu) + geom_sf(fill = "green4", color = "black")  +
+  geom_point(data= New_EV_Charge_Station, aes(x = EV_lon,
+                                      y = EV_lat), color = "red1")
 
 # station_Location <- EV_Charge_Station$Location.Address
 # view(station_Location)
@@ -20,11 +36,15 @@ EV_Charge_Station$Location.Address[39]
 
 
 # EV_Charge_Station %>% separate(Location.Address,  c("a", "b", "c", "d"), sep ="[(]", extra = "merge", fill = "left")
-New_EV_Charge_Station <-EV_Charge_Station %>% 
+New_EV_Charge_Station <-EV_Charge_Station%>% 
   separate(Location.Address,  c(NA, NA, NA, "coordinate"), sep ="[(]", extra = "merge", fill = "left")%>%
-  separate(coordinate, c("Longitude", "Latitude"), sep = ",")%>%
+  separate(coordinate, c("Latitude","Longitude"), sep = ",") %>%
   separate(Latitude, c("Latitude",NA), sep = "[)]", extra = "drop", fill = "right")
+
 view(New_EV_Charge_Station)  
+
+EV_lon <- New_EV_Charge_Station$Longitude
+EV_lat <- New_EV_Charge_Station$Latitude
 
 #   separate(Coordinate, c(NA, "Coordinate"), sep ="[\\(\\)]", extra = "drop", fill = "right")  
 # 
@@ -32,8 +52,7 @@ view(New_EV_Charge_Station)
 #   separate(Coordinate, c("Longitude", "Latitude"), sep = ",") 
 
 
-solar_permits <- read_csv("Dataset/solar_permits.csv")
-View(solar_permits)
+
 
 #========================Guide===============================================
 
