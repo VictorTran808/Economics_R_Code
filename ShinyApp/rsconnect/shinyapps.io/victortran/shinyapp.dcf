@@ -1,0 +1,10 @@
+name: shinyapp
+title:
+username:
+account: victortran
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1942821
+bundleId: 2876557
+url: https://victortran.shinyapps.io/shinyapp/
+when: 1584056748.25297
