@@ -1,3 +1,14 @@
+#' In this code, I was recalled my newly exported sf pv data which uses geometry for it coordinate points instead of a lng & lat columns
+#' The purpose of this script was to join my income acs data with the sf pv data. It was reduntant to recalled the income data 
+#' acs_2018_income and rejoin it with tract data and re-clean everything again. But I was able to combine the median income attribute into the sf PV data set.
+#' In addition, I did some further cleaning on the new income & sf pv dataset by removing any unnescessary attributes, and exported that into a new shape file
+#' called 'main_data' which will be the master dataset for the project group to collective add in there core data attribute.
+#' 
+#' Now with two clean spatial data I can finally start testing out a spatial bivariate analysis with pv & income
+#' 
+#' On a further note: reminder to re-edit and clean up of the code scripts for bettery organization and readability.
+
+
 setwd("C:/Users/calamity/Documents/R_Research/Economics_R_Code")
 library(tidyverse)
 library(sf)
