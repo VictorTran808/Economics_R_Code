@@ -175,3 +175,6 @@ censusInc %>%
             labFormat = labelFormat(prefix = "$"),
             opacity = 1) %>%
   addTiles()
+
+#Begin Analysis between the relationship of PV and Income
+

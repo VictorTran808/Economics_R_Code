@@ -28,7 +28,7 @@ ggplot(data=tractsf) + geom_sf(fill = "green4", color = "black")
 tail(Oahutract, 10)
 table(Oahutract$MTFCC)
 table(Oahutract$NAME)
-
+view(Oahutract)
 Rename_Income <- Income %>% rename(GEOID = "ID Geography")
 view(Rename_Income)
 Rename_Income <- mutate(Rename_Income, GEOID = str_remove(Rename_Income$GEOID, "14000US"))
@@ -53,7 +53,26 @@ ggplot(censusInc) +geom_sf(col= censusInc$`Household Income by Race`, fill=censu
 ggplot(censusInc) +geom_sf(aes(fill = censusInc$`Household Income by Race`))
 
 
+#better method to remove NW Hawaiian Island from Honolulu County Data
+# after joining the data to create the censusInc dataset, there are some row w/ NA value
+# put rows with NA into a seperate dataframe so that we can explore the unkown
+unknown <- filter(censusInc, is.na(Year) == TRUE)
+view(unknown)
+# notice that there are now 13 object in the dataframe, and one of the row has a longiutude of -175
+# This is the row we have to remove to get rid of the NW Hawaiian island from our dataset
+# the name value in this row is '9812'
+unknown <- filter(unknown, NAME != '9812')
+ggplot(unknown) +geom_sf()
+#Removing this object will now leave use with just a map of the Oahu census tract
 
+#Now cleaning censusInc
+#First remove the census with NW Hawaiian Islands
+censusInc <- filter(censusInc, NAME != '9812')
+#Then filter dataframe with year 2017 or is NA
+censusInc <- filter(censusInc, Year == 2017 | is.na(Year) == TRUE)
+censusInc <- filter(censusInc, NAME != '9900.01')
+view(censusInc)
+#Finally a perfect map
 
 
 view(Rename_Income)
