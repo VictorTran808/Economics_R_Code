@@ -15,7 +15,7 @@ library(censusapi)
 library(usethis)
 
 #getting started with using census api
-
+#require getting a key
 # Add key to .Renviron
 Sys.setenv(CENSUS_KEY= "2ae81a8d1fc6373243e19200753483865fe62b50")
 # Reload .Renviron
