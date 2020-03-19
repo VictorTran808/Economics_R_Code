@@ -1,4 +1,12 @@
-
+#' In this code I was able to do some spatial data manipulation and work with the sf library
+#' I called in both my tract data which is a sf object and my pv data which is just regular data frame
+#' The pv data whose lng & lat value were vector were converted into a 'geometry' coordinate point object,
+#' this made the pv into a new sf object. There were some trouble trying to do a spatial join with the new sf pv
+#' and sf tract data because of difference in crs, but the following code was able to fix that:
+#' PV= sf::st_as_sf(PV, coords = c("lng", "lat"), crs = st_crs(hi_sf))
+#' Now I was able to successfully do a spatial join and add the important attribute: GEOID to 
+#' the sf pv data. Having GEOID in the pv allows me to combine other dataset that are non-spatial to the pv data
+#' The new sf pv data was exported for future reusablity, the shape files are located in my new-dataset folder
 setwd("C:/Users/calamity/Documents/R_Research/Economics_R_Code")
 library(tidyverse)
 library(sf)
